@@ -1,0 +1,27 @@
+---------------------------------------------------------------------
+Please read doc/paper carefully!  Prove read whenever possible.
+
+Make changes along the way of our development.  (Point form is 
+acceptable, for now.)  Particularly, whenever we change the 
+philosophy in our genetic algorithm, make changes in the file
+"paper".
+
+When writing the paper, refer to appendix A or B as below.
+
+Modify the lyx file instead!  Easier for me to do formatting.
+
+---------------------------------------------------------------------
+When the time we need to prepare the project to hand-in, we need:
+
+- Prepare appendix A with:
+  - API document from doxygen (if possible)
+  - Code printout, in Appendix A (a must)
+
+- screen shot(s) in section 3
+
+- runtime stats of our program in section 4 (depends on writing)
+
+- Prepare appendix B with:
+  - a printout of a team (xml) file 
+---------------------------------------------------------------------
+

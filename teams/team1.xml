@@ -1,0 +1,20 @@
+<team name="Green Monsters" wins="12" losses="9" ties="3">
+	<bot mass="5" goals="25" interceptions="72">
+		<gaRule>
+			<rule teamBall="1" myBall="T" fire="T" move="F" turn="left">
+				<sensors s1="mybot" s2="mybot" s3="nothing" s4="nothing" s5="nothing" s6="wall" s7="nothing" s0="nothing"/>
+			</rule>
+			<rule teamBall="0" myBall="F" fire="F" move="T" turn="none">
+				<sensors s1="nothing" s2="nothing" s3="nothing" s4="wall" s5="wall" s6="otherbot" s7="net" s0="otherbot"/>
+			</rule>
+		</gaRule>
+	</bot>
+	<bot mass="10" goals="5" interceptions="0">
+		<gaRule>
+			<rule teamBall="1" myBall="F" fire="F" move="T" turn="right">
+				<sensors s1="nothing" s2="mybot" s3="otherbot" s4="ball" s5="wall" s6="net" s7="nothing" s0="otherbot"/>
+			</rule>
+		</gaRule>
+	</bot>
+</team>
+

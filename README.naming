@@ -1,0 +1,20 @@
+Naming Conventions
+------------------
+
+All filenames are lowercase, regardless of their contents. The directives at
+the start of each header file check for and define the name of the file, in
+uppercase, with the period replaced by an underscore.
+
+Classes have their first letter capitalized, and if there are multiple words
+in their name, then they are concatenated (without a separator), and the
+first letter of each word is capitalized.
+
+Variables in classes are named in the same way as classes.
+
+Methods have their first letter in lowercase, but if they are made of
+multiple words, then the first letter of each successive word is
+capitalized. The words are also concatenated without a separator. Methods
+that read or alter a particular variable will generally have the same name
+as the variable, but the first letter will be in lowercase instead of
+capitalized. Overloading should be used to avoid using
+getVariable/setVariable pairs of methods.

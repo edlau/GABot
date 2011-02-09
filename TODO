@@ -1,0 +1,64 @@
+*****************************************************************************
+
+General:
+
+ - Throw new stuff into this category, or take stuff out of it if you want
+   to work on it specifically.
+
+ - Add descriptions to those .h files.  Sometimes it's hard to remember
+   which one is which.  (i.e. confused me for a long time between the
+   bot.h and gabot.h, I'm still confused though. =b )
+
+ - display team names in main window
+    - this way the user knows if the team loaded correctly (aside from error
+      messages)
+
+ - maybe have bot masses distributed normally around 5
+
+ - there is a bool over() method in Game to tell if the game is over
+    - currently counts turns, but I suppose it could be used if we want to
+      end the game after a certain number of goals also
+    - maybe it should emit a signal
+
+ - SimpleGA is probably working. Call evolve(team) from a SimpleGA object on
+   each team after each game. Crossover and mutation will be handled
+   automagically.
+
+ - need a button or menu item to play the game without displaying anything
+    - disconnect signals/slots?
+    - use a loop instead of QTimer
+    - probably need to add a flag in botview to toggle the display on/off.
+
+ - force to end and reset the current game after certain amount of ticks.
+
+ - feature adding, in the summer
+
+ - move CVS to someplace else.
+
+*****************************************************************************
+
+Rich:
+
+ - Develop cold fusion. Nothing is debunked until I say so.
+
+ - Documenting header files that I've worked on
+
+ - Keep fighting the signal war.
+
+ - Need some way of telling the mainwindow that a game has finished.
+    - see my notes on over() above - Chris
+ 
+*****************************************************************************
+
+Chris:
+
+ - documentation
+    - in paper.tex
+    - instead of changing it, notify me of any changes you want made
+    - good job BoB
+
+*****************************************************************************
+
+Edmond:
+
+*****************************************************************************
