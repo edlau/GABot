@@ -61,6 +61,7 @@ you may have to create a symbolic link from `libqt-mt.so` to `libqt.so`.
 
 ```sh
 ln -s $QTDIR/lib/libqt-mt.so $QTDIR/lib/libqt.so
+
 ldconfig
 ```
 
