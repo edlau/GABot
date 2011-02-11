@@ -48,8 +48,9 @@ getVariable/setVariable pairs of methods.
 Makefile
 --------
 
-ex:
+```console
 	tmake gabot.pro > Makefile
+```
 
 Qt Linking
 ----------
@@ -58,9 +59,10 @@ If you experience linker errors when linking to qt, and you
 compiled qt with thread support (or can't remember if you did),
 you may have to create a symbolic link from `libqt-mt.so` to `libqt.so`.
 
-ex: 
-	ln -s $QTDIR/lib/libqt-mt.so $QTDIR/lib/libqt.so
-	ldconfig
+```console
+ln -s $QTDIR/lib/libqt-mt.so $QTDIR/lib/libqt.so
+ldconfig
+```
 
 GARule
 ------
