@@ -64,4 +64,4 @@ ex:
 
 GARule
 ------
-[README.GARule]
+[See this file](README.GARule)
