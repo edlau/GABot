@@ -48,7 +48,7 @@ getVariable/setVariable pairs of methods.
 Makefile
 --------
 
-```console
+```sh
 	tmake gabot.pro > Makefile
 ```
 
