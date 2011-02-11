@@ -23,3 +23,14 @@ Code Base
 
 The code is **based on C/C++ and older Qt (probably 2.x or 3.x**, whichever one
 from 2002).
+
+Qt Linking
+----------
+
+If you experience linker errors when linking to qt, and you
+compiled qt with thread support (or can't remember if you did),
+you may have to create a symbolic link from `libqt-mt.so` to `libqt.so`.
+
+ex: 
+	ln -s $QTDIR/lib/libqt-mt.so $QTDIR/lib/libqt.so
+	ldconfig
