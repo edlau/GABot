@@ -64,4 +64,4 @@ ex:
 
 GARule
 ------
-[See this file](README.GARule)
+[See this file](https://github.com/edlau/GABot/blob/master/README.GARule)
