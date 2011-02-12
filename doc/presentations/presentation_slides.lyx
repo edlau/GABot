@@ -1,0 +1,126 @@
+#LyX 1.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 218
+\textclass slides
+\begin_preamble
+% Uncomment to print out only slides and overlays
+%
+%\onlyslides{\slides}
+
+% Uncomment to print out only notes
+%
+%\onlynotes{\notes}
+\end_preamble
+\language english
+\inputencoding default
+\fontscheme helvet
+\graphics dvips
+\paperfontsize default
+\spacing single 
+\papersize Default
+\paperpackage a4
+\use_geometry 0
+\use_amsmath 0
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\quotes_times 2
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+
+\layout Slide
+
+Introduction
+\layout Standard
+\align center 
+
+\series bold 
+A Genetic Algorithm Bots Game (GABot)
+\layout VisibleText
+
+\layout Standard
+\align center 
+
+\size normal 
+By Edmond Lau, Chris Odorjan, Richard Voino
+\layout Description
+
+Programming\SpecialChar ~
+Language C++, Qt Toolkit
+\layout Description
+
+Platform Linux with XFree86 Support
+\layout Description
+
+Game\SpecialChar ~
+Play Similar to hockey.
+ This game is played in an arena with the ball initially placed in the middle
+ of the arena, and there are two teams of players (bots) trying to score
+ goals.
+\layout Slide
+
+List of topics
+\layout Itemize
+
+Structure of the Genetic Algorithm code
+\begin_deeper 
+\layout Itemize
+
+Genetic Algorithm Rule
+\layout Itemize
+
+
+\begin_inset Figure size 152 152
+file rule.eps
+flags 9
+
+\end_inset 
+
+
+\layout Itemize
+
+Fitness Function
+\layout Itemize
+
+Crossover / Mutation of bots
+\end_deeper 
+\layout Itemize
+
+Structure of the Arena code
+\begin_deeper 
+\layout Itemize
+
+Grid, Display
+\layout Itemize
+
+Ball and Bots representations
+\end_deeper 
+\layout Slide
+
+more topics
+\layout Itemize
+
+Structure of the Data code
+\begin_deeper 
+\layout Itemize
+
+XML
+\end_deeper 
+\layout Itemize
+
+Development Difficulties
+\layout Itemize
+
+Future Development
+\layout Itemize
+
+Demo 1: Team Bob vs.
+ Team Richard
+\layout Itemize
+
+Demo 2: Stochastic vs.
+ Stochastic
+\the_end
