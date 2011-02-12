@@ -1,0 +1,195 @@
+---------------------------------------------------------------------
+Note:
+
+- Ahmed likes the IEEE style, he likes the style we use in our
+  image processing paper except he wanted the Abstract to be in
+  Italic.
+
+- For footnote, write [FN: footnote text here], I will put them in
+  accordingly.  No need to number them, lyx will do it.
+
+- for commenting the document put square bracket around the comments
+
+- make sure the development of our GA is the same as what we say in 
+  section 2
+
+- I will do the formatting and printout at the very end.
+
+
+---------------------------------------------------------------------
+
+Game Playing With Genetic Algorithms
+
+Edmond Lau, Chris Odorjan, Richard Voino
+
+April 4, 2002
+
+
+Abstract
+
+
+
+
+1. Introduction
+
+2. The Game
+
+2.1. Game Definition
+
+To test a simple genetic algorithm a game similar to hockey was devised. The
+game is played in an arena twice as wide as it is high, with the ball
+initially placed in the centre and two nets at either end. A number of
+players are lined up on either side of a line through the centre of the
+arena.
+
+When the game begins, players may move in any direction. If a player comes
+in contact with the ball, it takes possession of it. It may then carry the
+ball with it, pass it to another player, or shoot it at the net. If a player
+with the ball comes in contact with a player on the opposing team, there is
+a chance that the other player can take possession of the ball.
+
+Goals are scored when the ball enters the net, either by being carried by a
+player, or if it is shot into the net by a player. The team that the player
+is on receives a positive goal if the ball entered the opposing team's net,
+or a negative goal if the ball entered their own net. After a goal is
+scored, the arena is reset, players begin from their starting positions, and
+the ball is placed in the centre of the arena.
+
+The game continues for a predefined amount of time.
+
+2.2. Assumptions
+
+Since shooting and passing the ball are the same operation, they are defined
+as "firing" the ball.
+
+Players are defined by Bots. Each bot is given a mass; more massive bots can
+fire the ball faster, but they themselves will move slower.
+
+All movement for both bots and the ball is defined in terms of a "turn". The
+speed of the object determines how many turns it takes before the object may
+move. After a predefined number of turns, the game ends and the genetic
+algorithm is performed on each team.
+
+3. Genetic Algorithm
+
+3.1. Bot Fitness
+
+The fitness of each bot is measured by its performance during a game.
+Currently, goals scored are weighed the highest, followed by interceptions
+made and time with the ball. These weighted scores are summed and the result
+is the fitness of the bot. Since goals scored can be negative, so can the
+fitness.
+
+3.2. Crossover Function
+
+After each game, the fitness function is computed for each bot and the bots
+are sorted by their fitness. The lowest scoring bots are removed from the
+team. The highest scoring bots are used as input to a crossover function,
+which takes a random number of rules from the first parent bot and a different
+random number of rules from the second parent bot to form a child bot. The
+other child bot is formed from the remaining rules. These new bots are used
+to replace the lowest scoring bots in the team.
+
+3.3. Mutation
+
+When the new team including old successful bots and newly generated bots has
+been constructed, a random variable is generated and compared to the
+mutation rate specified in the program initialization. If it is decided to
+mutate, a bot on the new team is chosen at random, and a rule in that bot
+also at random to be mutated is changed.
+
+4. Rules
+
+4.1. Rule Sets
+
+Each bot stores a number of rules, consisting of six different elements.
+Three are conditions:
+ - sensor array (of eight elements), indicating an object (or nothing)
+   within the sensor range of the 8 cardinal directions of the bot
+ - teamBall, which is true when the bot's team is in possession of the ball
+ - myBall, which is true when the bot itself is in possesion of the ball
+Three are actions:
+ - fire, indicating that the bot should fire the ball when the conditions
+   are met
+ - move, indicating that the bot should move one space in the direction it
+   is facing
+ - turn, which is one of Left, Right, or None, indicating a direction for
+   the bot to turn to
+
+(include diagram)
+
+4.2. Rule Evaluation
+
+When a bot is given the chance to move, it determines its state, which is
+programmed into the conditions of a rule. These conditions are compared with
+the rules the bot has stored and sorted according to how closely they match
+the given conditions. The closest matching rule is executed, or in the case
+of multiple matching rules one is chosen at random.
+
+Rule execution consists of performing one of the actions specified in the
+rule. Only one action may be performed, so if the rule specifies more than
+one action, they are performed in this order:
+ - fire
+ - move
+ - turn
+Movement also involves checking if the bot collided with another bot, the
+ball, or a wall. If the bot is in possession of the ball, then it should
+move along with the bot when the rule is executed.
+
+5. Implementation
+
+5.1. Language and Toolkit
+
+The implementation of the described system is entirely in C++. The Qt
+Toolkit was used for the graphical user interface and other functions it
+provides. The program was developed entirely on x86-type processors running
+Linux, but it has been compiled on Windows, and will likely run on any
+system that Qt has been ported to.
+
+5.2. Structure
+
+This software package consists of 15 classes which are listed below:
+Arena		responsible for display of the arena
+Arenabot	responsible for display of objects in the arena
+Ball 		describes the ball in the game
+Bot 		describes a bot and provides storage for its rule set
+Botview		responsible for display of objects
+Coordinate      stores a two-dimensional cartesian coordinate
+GABot		main data storage class
+Game		performs the actual game play
+GARule		describes a rule
+Mainwindow	display of main window
+Random		static class to encapsulate some useful RNG functions
+SimpleGA	performs genetic algorithm evolution operations on a team
+Team		describes a team and provides storage for the bots on it
+TeamData	responsible for loading and saving bot data
+TeamParser	parses an XML file when loading team data
+
+There are also three other types defined:
+Direction	enumerated type of cardinal directions (N, NE, E, etc.)
+Rotation	enumerated type of turn directions (Left, Right, None)
+Thing		enumerated type of things that may be perceived by bots
+
+5.3. Graphical User Interface
+
+Versions 2.2.4, 2.3.2, and 3.0.2 were used and tested during development.
+Attached here are some screenshots of this implementation:
+
+(screen shots of the game running)
+
+6. Experiments
+
+(Discuss the results of teams' performances)
+
+7. Conclusions
+
+(what we learned from this experiment)
+
+References
+
+Dalheimer, M., Programming with Qt, O'Reilly, 1999
+
+Norvig, P., Russell, S., Artificial Intelligence A Modern Approach, Prentice Hall, 1995
+
+Stroustrup, B., The C++ Programming Language, Special Edition (3rd), Addison Wesley, 2000
+
