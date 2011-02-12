@@ -1,0 +1,210 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.3	//
+Arena	arena.cpp	/^Arena::Arena( QWidget *parent, const char *name )$/;"	f	class:Arena
+Ball	ball.cpp	/^Ball::Ball(QObject *parent, const char * name)$/;"	f	class:Ball
+Bot	bot.cpp	/^Bot::Bot(QObject *parent, const char *name)$/;"	f	class:Bot
+Bot	bot.cpp	/^Bot::Bot(QObject *parent, unsigned int m)$/;"	f	class:Bot
+BotView	botview.cpp	/^BotView::BotView(QWidget *parent,const char *name, int w, int h) $/;"	f	class:BotView
+GABot	gabot.cpp	/^GABot::GABot(QObject *parent, const char * name)$/;"	f	class:GABot
+GARule	garule.cpp	/^GARule::GARule(QObject *parent,const char *name):QObject(parent,name) {$/;"	f	class:GARule
+GARule	garule.cpp	/^GARule::GARule(const GARule& t){$/;"	f	class:GARule
+Game	game.cpp	/^Game::Game(QObject *parent,Team *t1, Team *t2, unsigned int l, unsigned int w, unsigned int h)$/;"	f	class:Game
+GoalsWeight	bot.cpp	/^float Bot::GoalsWeight = 1.0;$/;"	m	class:Bot	file:
+InterceptionsWeight	bot.cpp	/^float Bot::InterceptionsWeight = 0.5;$/;"	m	class:Bot	file:
+M_PI	game.cpp	20;"	d	file:
+MainWindow	mainwindow.cpp	/^MainWindow::MainWindow()$/;"	f	class:MainWindow
+SimpleGA	simplega.cpp	/^SimpleGA::SimpleGA() {$/;"	f	class:SimpleGA
+SimpleGA	simplega.cpp	/^SimpleGA::SimpleGA(double mRate) {$/;"	f	class:SimpleGA
+Team	team.cpp	/^Team::Team(QObject *parent, const char *name)$/;"	f	class:Team
+TeamParser	teamparser.cpp	/^TeamParser::TeamParser():QXmlDefaultHandler(){$/;"	f	class:TeamParser
+TimeWithBallWeight	bot.cpp	/^float Bot::TimeWithBallWeight = 0.2;$/;"	m	class:Bot	file:
+ballInNet	game.cpp	/^unsigned int Game::ballInNet() {$/;"	f	class:Game
+bestRule	bot.cpp	/^GARule* Bot::bestRule(GARule *cond) {$/;"	f	class:Bot
+bot	team.cpp	/^Bot* Team::bot(unsigned int num) {$/;"	f	class:Team
+botCollision	game.cpp	/^void Game::botCollision(Bot *b, unsigned int teamnum) {$/;"	f	class:Game
+botState	game.cpp	/^GARule* Game::botState(Bot *b, unsigned int teamnum) {$/;"	f	class:Game
+bots	team.cpp	/^QList<Bot> Team::bots() {$/;"	f	class:Team
+bots	team.cpp	/^QList<Bot> Team::bots(QList<Bot> bs) {$/;"	f	class:Team
+clearAll	arena.cpp	/^void Arena::clearAll(void)$/;"	f	class:Arena
+clearAt	arena.cpp	/^void Arena::clearAt(int X, int Y)$/;"	f	class:Arena
+crossover	simplega.cpp	/^void SimpleGA::crossover(Bot *aIn, Bot *bIn, Bot *aOut, Bot *bOut) {$/;"	f	class:SimpleGA
+difference	garule.cpp	/^unsigned int GARule::difference(GARule *cond) {$/;"	f	class:GARule
+direction	ball.cpp	/^Direction Ball::direction() $/;"	f	class:Ball
+direction	ball.cpp	/^Direction Ball::direction(Direction d) $/;"	f	class:Ball
+direction	bot.cpp	/^Direction Bot::direction() {$/;"	f	class:Bot
+direction	bot.cpp	/^Direction Bot::direction(Direction d) {$/;"	f	class:Bot
+endElement	teamparser.cpp	/^bool TeamParser::endElement(const QString&, const QString& qName, const QString&){$/;"	f	class:TeamParser
+evolve	simplega.cpp	/^void SimpleGA::evolve(Team *T) {$/;"	f	class:SimpleGA
+execRule	bot.cpp	/^void Bot::execRule(GARule *r, Ball *B, unsigned int ArenaWidth, unsigned int ArenaHeight) {$/;"	f	class:Bot
+fieldHeight	botview.cpp	/^int BotView::fieldHeight(int A)$/;"	f	class:BotView
+fieldHeight	botview.cpp	/^int BotView::fieldHeight(void)$/;"	f	class:BotView
+fieldWidth	botview.cpp	/^int BotView::fieldWidth(int A)$/;"	f	class:BotView
+fieldWidth	botview.cpp	/^int BotView::fieldWidth(void)$/;"	f	class:BotView
+fire	garule.cpp	/^bool GARule::fire(){$/;"	f	class:GARule
+fire	garule.cpp	/^bool GARule::fire(bool f){$/;"	f	class:GARule
+fitnessFunction	bot.cpp	/^float Bot::fitnessFunction() {$/;"	f	class:Bot
+generations	team.cpp	/^unsigned int Team::generations() {$/;"	f	class:Team
+generations	team.cpp	/^unsigned int Team::generations(unsigned int g) {$/;"	f	class:Team
+goals	bot.cpp	/^int Bot::goals() {$/;"	f	class:Bot
+goals	bot.cpp	/^int Bot::goals(int g) {$/;"	f	class:Bot
+goals	team.cpp	/^int Team::goals() {$/;"	f	class:Team
+goals	team.cpp	/^int Team::goals(int g) {$/;"	f	class:Team
+goalsWeight	bot.cpp	/^float Bot::goalsWeight() {$/;"	f	class:Bot
+goalsWeight	bot.cpp	/^float Bot::goalsWeight(float w) {$/;"	f	class:Bot
+initActions	mainwindow.cpp	/^void MainWindow::initActions(){$/;"	f	class:MainWindow
+initGABotDoc	mainwindow.cpp	/^void MainWindow::initGABotDoc()$/;"	f	class:MainWindow
+initMenuBar	mainwindow.cpp	/^void MainWindow::initMenuBar()$/;"	f	class:MainWindow
+initStatusBar	mainwindow.cpp	/^void MainWindow::initStatusBar()$/;"	f	class:MainWindow
+initToolBar	mainwindow.cpp	/^void MainWindow::initToolBar()$/;"	f	class:MainWindow
+initView	mainwindow.cpp	/^void MainWindow::initView()$/;"	f	class:MainWindow
+initseed	random.cpp	/^void Random::initseed() {$/;"	f	class:Random
+insertBot	team.cpp	/^unsigned int Team::insertBot(Bot *b) {$/;"	f	class:Team
+insertBot	team.cpp	/^unsigned int Team::insertBot(Bot *b, unsigned int num) {$/;"	f	class:Team
+insertRule	bot.cpp	/^GARule* Bot::insertRule(GARule *r) {$/;"	f	class:Bot
+insertRule	bot.cpp	/^GARule* Bot::insertRule(GARule *r, unsigned int num) {$/;"	f	class:Bot
+interceptions	bot.cpp	/^unsigned int Bot::interceptions() {$/;"	f	class:Bot
+interceptions	bot.cpp	/^unsigned int Bot::interceptions(unsigned int i) {$/;"	f	class:Bot
+interceptionsWeight	bot.cpp	/^float Bot::interceptionsWeight() {$/;"	f	class:Bot
+interceptionsWeight	bot.cpp	/^float Bot::interceptionsWeight(float w) {$/;"	f	class:Bot
+loadTeamFromFile	gabot.cpp	/^int GABot::loadTeamFromFile( QString Filename, int TeamNumber )$/;"	f	class:GABot
+loading	mainwindow.cpp	/^void MainWindow::loading(QString FileName)$/;"	f	class:MainWindow
+losses	team.cpp	/^unsigned int Team::losses() {$/;"	f	class:Team
+losses	team.cpp	/^unsigned int Team::losses(unsigned int l) {$/;"	f	class:Team
+main	main.cpp	/^int main(int argc, char *argv[])$/;"	f
+mass	bot.cpp	/^unsigned int Bot::mass() {$/;"	f	class:Bot
+mass	bot.cpp	/^unsigned int Bot::mass(unsigned int m) {$/;"	f	class:Bot
+move	garule.cpp	/^bool GARule::move(){$/;"	f	class:GARule
+move	garule.cpp	/^bool GARule::move(bool m){$/;"	f	class:GARule
+moveBall	ball.cpp	/^void Ball::moveBall(unsigned int ArenaWidth, unsigned int ArenaHeight) $/;"	f	class:Ball
+mutateBot	bot.cpp	/^void Bot::mutateBot() {$/;"	f	class:Bot
+mutateRule	garule.cpp	/^void GARule::mutateRule() {$/;"	f	class:GARule
+mutationRate	simplega.cpp	/^double SimpleGA::mutationRate() {$/;"	f	class:SimpleGA
+mutationRate	simplega.cpp	/^double SimpleGA::mutationRate(double rate) {$/;"	f	class:SimpleGA
+myBall	bot.cpp	/^bool Bot::myBall() {$/;"	f	class:Bot
+myBall	bot.cpp	/^bool Bot::myBall(bool b) {$/;"	f	class:Bot
+myBall	garule.cpp	/^bool GARule::myBall(){$/;"	f	class:GARule
+myBall	garule.cpp	/^bool GARule::myBall(bool b){$/;"	f	class:GARule
+name	team.cpp	/^QString Team::name(){$/;"	f	class:Team
+name	team.cpp	/^QString Team::name(QString n){$/;"	f	class:Team
+operator =	garule.cpp	/^GARule& GARule::operator=(const GARule& t){$/;"	f	class:GARule
+over	game.cpp	/^bool Game::over() {$/;"	f	class:Game
+paintEvent	arena.cpp	/^void Arena::paintEvent( QPaintEvent *e )$/;"	f	class:Arena
+player	ball.cpp	/^unsigned int Ball::player() $/;"	f	class:Ball
+player	ball.cpp	/^unsigned int Ball::player(unsigned int p) $/;"	f	class:Ball
+posIndex	game.cpp	/^unsigned int Game::posIndex(Coordinate first, Coordinate second) {$/;"	f	class:Game
+position	ball.cpp	/^Coordinate Ball::position() $/;"	f	class:Ball
+position	ball.cpp	/^Coordinate Ball::position(Coordinate p) $/;"	f	class:Ball
+position	bot.cpp	/^Coordinate Bot::position() {$/;"	f	class:Bot
+position	bot.cpp	/^Coordinate Bot::position(Coordinate c) {$/;"	f	class:Bot
+prepareGame	gabot.cpp	/^void GABot::prepareGame(void) $/;"	f	class:GABot
+putBall	arena.cpp	/^void Arena::putBall(int X, int Y)$/;"	f	class:Arena
+putBotA	arena.cpp	/^void Arena::putBotA(int X, int Y, int A)$/;"	f	class:Arena
+putBotB	arena.cpp	/^void Arena::putBotB(int X, int Y, int A)$/;"	f	class:Arena
+queryExit	mainwindow.cpp	/^bool MainWindow::queryExit()$/;"	f	class:MainWindow
+randbool	random.cpp	/^bool Random::randbool() {$/;"	f	class:Random
+randd	random.cpp	/^double Random::randd(double start, double end) {$/;"	f	class:Random
+randint	random.cpp	/^int Random::randint(int start, int end) {$/;"	f	class:Random
+randomBot	bot.cpp	/^void Bot::randomBot(unsigned int numrules, unsigned int m) {$/;"	f	class:Bot
+randomRule	garule.cpp	/^void GARule::randomRule() {$/;"	f	class:GARule
+randomTeam	gabot.cpp	/^void GABot::randomTeam(int TeamNumber)$/;"	f	class:GABot
+randomTeam	team.cpp	/^void Team::randomTeam(unsigned int size) {$/;"	f	class:Team
+readTeamData	teamdata.cpp	/^Team* TeamData::readTeamData(QString filename){$/;"	f	class:TeamData
+removeBot	team.cpp	/^Bot* Team::removeBot(unsigned int num) {$/;"	f	class:Team
+removeRule	bot.cpp	/^GARule* Bot::removeRule(GARule *r) {$/;"	f	class:Bot
+removeRule	bot.cpp	/^GARule* Bot::removeRule(unsigned int num) {$/;"	f	class:Bot
+reset	ball.cpp	/^void Ball::reset(Coordinate p) $/;"	f	class:Ball
+reset	game.cpp	/^void Game::reset() {$/;"	f	class:Game
+rule	bot.cpp	/^GARule* Bot::rule(unsigned int num) {$/;"	f	class:Bot
+ruleSetSize	bot.cpp	/^unsigned int Bot::ruleSetSize() {$/;"	f	class:Bot
+rules	bot.cpp	/^QList<GARule> Bot::rules() {$/;"	f	class:Bot
+rules	bot.cpp	/^QList<GARule> Bot::rules(QList<GARule> rs) {$/;"	f	class:Bot
+saveTeamToFile	gabot.cpp	/^int GABot::saveTeamToFile( QString Filename, int TeamNumber)$/;"	f	class:GABot
+sensors	garule.cpp	/^Thing* GARule::sensors(){$/;"	f	class:GARule
+sensors	garule.cpp	/^Thing* GARule::sensors(Thing s[]){$/;"	f	class:GARule
+size	team.cpp	/^unsigned int Team::size() {$/;"	f	class:Team
+slotBallMoved	gabot.cpp	/^void GABot::slotBallMoved(Coordinate Old, Coordinate New) $/;"	f	class:GABot
+slotBallMoved	game.cpp	/^void Game::slotBallMoved(Coordinate Old, Coordinate New) {$/;"	f	class:Game
+slotBotDirection	team.cpp	/^void Team::slotBotDirection(Coordinate P,Direction B)$/;"	f	class:Team
+slotBotDirectionA	gabot.cpp	/^void GABot::slotBotDirectionA(Coordinate P, Direction B)$/;"	f	class:GABot
+slotBotDirectionB	gabot.cpp	/^void GABot::slotBotDirectionB(Coordinate P, Direction B)$/;"	f	class:GABot
+slotBotMove	team.cpp	/^void Team::slotBotMove(Coordinate P1,Coordinate P2)$/;"	f	class:Team
+slotBotMoveA	gabot.cpp	/^void GABot::slotBotMoveA(Coordinate P1, Coordinate P2)$/;"	f	class:GABot
+slotBotMoveB	gabot.cpp	/^void GABot::slotBotMoveB(Coordinate P1, Coordinate P2)$/;"	f	class:GABot
+slotClearField	botview.cpp	/^void BotView::slotClearField(void)$/;"	f	class:BotView
+slotClearField	gabot.cpp	/^void GABot::slotClearField(void)$/;"	f	class:GABot
+slotClearScores	botview.cpp	/^void BotView::slotClearScores(void)$/;"	f	class:BotView
+slotFileClose	mainwindow.cpp	/^void MainWindow::slotFileClose()$/;"	f	class:MainWindow
+slotFileQuit	mainwindow.cpp	/^void MainWindow::slotFileQuit()$/;"	f	class:MainWindow
+slotGameOver	gabot.cpp	/^void GABot::slotGameOver(void)$/;"	f	class:GABot
+slotGameOver	mainwindow.cpp	/^void MainWindow::slotGameOver(void)$/;"	f	class:MainWindow
+slotGameReady	mainwindow.cpp	/^void MainWindow::slotGameReady(bool GameReady)$/;"	f	class:MainWindow
+slotGenerateTeamA	mainwindow.cpp	/^void MainWindow::slotGenerateTeamA(void)$/;"	f	class:MainWindow
+slotGenerateTeamB	mainwindow.cpp	/^void MainWindow::slotGenerateTeamB(void)$/;"	f	class:MainWindow
+slotGoGame	mainwindow.cpp	/^void MainWindow::slotGoGame(void)$/;"	f	class:MainWindow
+slotHelpAbout	mainwindow.cpp	/^void MainWindow::slotHelpAbout()$/;"	f	class:MainWindow
+slotLoadTeamA	mainwindow.cpp	/^void MainWindow::slotLoadTeamA (void)$/;"	f	class:MainWindow
+slotLoadTeamB	mainwindow.cpp	/^void MainWindow::slotLoadTeamB (void)$/;"	f	class:MainWindow
+slotMoveBall	botview.cpp	/^void BotView::slotMoveBall(Coordinate Old, Coordinate New)$/;"	f	class:BotView
+slotMoveTeamA	botview.cpp	/^void BotView::slotMoveTeamA(Coordinate P1, Coordinate P2)$/;"	f	class:BotView
+slotMoveTeamB	botview.cpp	/^void BotView::slotMoveTeamB(Coordinate P1, Coordinate P2)$/;"	f	class:BotView
+slotSaveTeamA	mainwindow.cpp	/^void MainWindow::slotSaveTeamA (void)$/;"	f	class:MainWindow
+slotSaveTeamB	mainwindow.cpp	/^void MainWindow::slotSaveTeamB (void)$/;"	f	class:MainWindow
+slotScoreA	botview.cpp	/^void BotView::slotScoreA(void)$/;"	f	class:BotView
+slotScoreB	botview.cpp	/^void BotView::slotScoreB(void)$/;"	f	class:BotView
+slotStartTimer	gabot.cpp	/^void GABot::slotStartTimer(void)$/;"	f	class:GABot
+slotStopGame	mainwindow.cpp	/^void MainWindow::slotStopGame(void)$/;"	f	class:MainWindow
+slotStopTimer	gabot.cpp	/^void GABot::slotStopTimer(void)$/;"	f	class:GABot
+slotTeamAScores	gabot.cpp	/^void GABot::slotTeamAScores(void)$/;"	f	class:GABot
+slotTeamBScores	gabot.cpp	/^void GABot::slotTeamBScores(void)$/;"	f	class:GABot
+slotTickInterval	gabot.cpp	/^void GABot::slotTickInterval(int A)$/;"	f	class:GABot
+slotTickInterval	mainwindow.cpp	/^void MainWindow::slotTickInterval(int Inter)$/;"	f	class:MainWindow
+slotTurn	gabot.cpp	/^void GABot::slotTurn(void)$/;"	f	class:GABot
+slotTurnTeamA	botview.cpp	/^void BotView::slotTurnTeamA(Coordinate P1, Direction B)$/;"	f	class:BotView
+slotTurnTeamB	botview.cpp	/^void BotView::slotTurnTeamB(Coordinate P1, Direction B)$/;"	f	class:BotView
+slotValueChanged	botview.cpp	/^void BotView::slotValueChanged(int V)$/;"	f	class:BotView
+slotViewGame	mainwindow.cpp	/^void MainWindow::slotViewGame(bool toggle)$/;"	f	class:MainWindow
+slotViewStatusBar	mainwindow.cpp	/^void MainWindow::slotViewStatusBar(bool toggle)$/;"	f	class:MainWindow
+slotViewToolBar	mainwindow.cpp	/^void MainWindow::slotViewToolBar(bool toggle)$/;"	f	class:MainWindow
+speed	ball.cpp	/^unsigned int Ball::speed() $/;"	f	class:Ball
+speed	ball.cpp	/^unsigned int Ball::speed(unsigned int s) $/;"	f	class:Ball
+startDocument	teamparser.cpp	/^bool TeamParser::startDocument()$/;"	f	class:TeamParser
+startElement	teamparser.cpp	/^bool TeamParser::startElement(const QString& namespaceURI, const QString& localName,$/;"	f	class:TeamParser
+team	ball.cpp	/^unsigned int Ball::team() $/;"	f	class:Ball
+team	ball.cpp	/^unsigned int Ball::team(unsigned int t) $/;"	f	class:Ball
+teamBall	garule.cpp	/^int GARule::teamBall(){$/;"	f	class:GARule
+teamBall	garule.cpp	/^int GARule::teamBall(int t){$/;"	f	class:GARule
+teamData	teamparser.cpp	/^Team* TeamParser::teamData(){$/;"	f	class:TeamParser
+teamFileOpen	mainwindow.cpp	/^void MainWindow::teamFileOpen(int TeamNumber)$/;"	f	class:MainWindow
+teamFileSave	mainwindow.cpp	/^void MainWindow::teamFileSave(int TeamNumber)$/;"	f	class:MainWindow
+teamGenerateRandom	mainwindow.cpp	/^void MainWindow::teamGenerateRandom(int TeamNumber)$/;"	f	class:MainWindow
+ticksUntilNextMove	ball.cpp	/^unsigned int Ball::ticksUntilNextMove() $/;"	f	class:Ball
+ticksUntilNextMove	ball.cpp	/^unsigned int Ball::ticksUntilNextMove(unsigned int t) $/;"	f	class:Ball
+ticksUntilNextMove	bot.cpp	/^unsigned int Bot::ticksUntilNextMove() {$/;"	f	class:Bot
+ticksUntilNextMove	bot.cpp	/^unsigned int Bot::ticksUntilNextMove(unsigned int t) {$/;"	f	class:Bot
+ties	team.cpp	/^unsigned int Team::ties() {$/;"	f	class:Team
+ties	team.cpp	/^unsigned int Team::ties(unsigned int t) {$/;"	f	class:Team
+timeWithBall	bot.cpp	/^unsigned int Bot::timeWithBall() {$/;"	f	class:Bot
+timeWithBall	bot.cpp	/^unsigned int Bot::timeWithBall(unsigned int t) {$/;"	f	class:Bot
+timeWithBallWeight	bot.cpp	/^float Bot::timeWithBallWeight() {$/;"	f	class:Bot
+timeWithBallWeight	bot.cpp	/^float Bot::timeWithBallWeight(float w) {$/;"	f	class:Bot
+tradeBall	game.cpp	/^bool Game::tradeBall(Bot *a, Bot *b, unsigned int bTeam, unsigned int bNum) {$/;"	f	class:Game
+turn	game.cpp	/^void Game::turn() {$/;"	f	class:Game
+turn	garule.cpp	/^Rotation GARule::turn(){$/;"	f	class:GARule
+turn	garule.cpp	/^Rotation GARule::turn(Rotation t){$/;"	f	class:GARule
+wins	team.cpp	/^unsigned int Team::wins() {$/;"	f	class:Team
+wins	team.cpp	/^unsigned int Team::wins(unsigned int w) {$/;"	f	class:Team
+writeTeamData	teamdata.cpp	/^bool TeamData::writeTeamData(QString filename, Team* team){$/;"	f	class:TeamData
+~Arena	arena.cpp	/^Arena::~Arena()$/;"	f	class:Arena
+~Ball	ball.cpp	/^Ball::~Ball() $/;"	f	class:Ball
+~Bot	bot.cpp	/^Bot::~Bot(){$/;"	f	class:Bot
+~BotView	botview.cpp	/^BotView::~BotView()$/;"	f	class:BotView
+~GABot	gabot.cpp	/^GABot::~GABot()$/;"	f	class:GABot
+~GARule	garule.cpp	/^GARule::~GARule() {$/;"	f	class:GARule
+~Game	game.cpp	/^Game::~Game() {$/;"	f	class:Game
+~MainWindow	mainwindow.cpp	/^MainWindow::~MainWindow()$/;"	f	class:MainWindow
+~SimpleGA	simplega.cpp	/^SimpleGA::~SimpleGA() {$/;"	f	class:SimpleGA
+~Team	team.cpp	/^Team::~Team() {$/;"	f	class:Team
