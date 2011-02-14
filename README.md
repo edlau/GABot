@@ -22,8 +22,7 @@ and watched too much Star Trek.
 License
 -------
 
-GABot is licensed under the GNU General Public License, version 3.0
-( [[http://www.gnu.org/licenses/gpl.html]] )
+GABot is licensed under the GNU General Public License, version 3.0 (http://www.gnu.org/licenses/gpl.html)
 
 Code Base
 ---------
