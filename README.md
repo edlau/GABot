@@ -18,6 +18,12 @@ Disclaimer
 If you find any comment funny, drop us a line!  If you find anything
 offensive, probably because we spent so much time working on this at night.
 
+License
+-------
+
+GABot is licensed under the GNU General Public License, version 3.0
+(http://www.gnu.org/licenses/gpl.html)
+
 Code Base
 ---------
 
