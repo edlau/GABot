@@ -9,20 +9,21 @@ Wilfrid Laurier University.
 Since the completion of the school project, the gang had many discussions
 (over beer and wine) on how to revive the project, enhance the code and 
 publish the project somewhere on SourceForge.  But after 8 years and much
-alcohol consumed, we have decided to push the original code.  Hopefully,
+alcohol consumed, we have decided to push the original code to GitHub.  Hopefully,
 someone out there will find this code useful.
 
 Disclaimer
 ----------
 
-If you find any comment funny, drop us a line!  If you find anything
-offensive, probably because we spent so much time working on this at night.
+If you find any comment funny, drop us a line!  If you find any jokes
+offensive, probably because we spent so much time working on this during nights
+and watched too much Star Trek.
 
 License
 -------
 
 GABot is licensed under the GNU General Public License, version 3.0
-(http://www.gnu.org/licenses/gpl.html)
+([http://www.gnu.org/licenses/gpl.html])
 
 Code Base
 ---------
