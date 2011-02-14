@@ -23,7 +23,7 @@ License
 -------
 
 GABot is licensed under the GNU General Public License, version 3.0
-([http://www.gnu.org/licenses/gpl.html])
+([[http://www.gnu.org/licenses/gpl.html]])
 
 Code Base
 ---------
